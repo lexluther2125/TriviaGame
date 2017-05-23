@@ -1,0 +1,29 @@
+body {
+	background-color: black;
+}
+
+#header {
+	text-align: center;
+	color: white;
+	font-family: 'Diplomata', cursive;
+
+}
+
+#start {
+	padding: 20px;
+	margin-left: 80px;
+	color:red;
+	border-color: red;
+	background-color: white;
+	font-size: 16px;
+}
+
+#timer {
+	color:red;
+}
+
+#pic {
+	margin-left: 80px;
+	width: 500px;
+	height: 300px;
+}
