@@ -5,22 +5,34 @@
     <meta charset="UTF-8">
     <title>Trivia Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Ultra" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
     
 </head>
 
 <body>
-    <h1>A 'Big' Trivia Game</h1>
+
+    <h1 id="header">A 'Big' Trivia Game</h1>
+    <img src="assets/images/zoltar.jpg" id="zoltar">
     <div class="intro"  id="game-board" class="invisible">
+    <div class="panel panel-default">
+  <div class="panel-body">
         <p>How well do you remember the movie, 'Big' starring Tom Hanks? Try your hand at these eight trivia questions and see how well you do. Be mindful of the timer though! You only have a limited amount of time to complete these questions. Good luck!</p>
-        
+         </div>
+</div>
     
     <p>You have <span id="timer"></span> seconds remaining!</p>
   
 </div>
+<div class="well col-md-6" id="trivia">
     <form id= "quiz" name= "quiz">
-        <p>In the movie 'Big', what did Josh Baskin wish for?</p>
+    <hr>
+        <p><strong>1. ) In the movie 'Big', what did Josh Baskin wish for?</strong></p>
+        <hr>
         <iframe src="https://giphy.com/embed/DRt7Urn4gtfos" width="480" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         <p><a href="https://giphy.com/gifs/big-elizabeth-perkins-david-moscow-DRt7Urn4gtfos">via GIPHY</a></p>
         <div>
@@ -38,7 +50,9 @@
             </br>
         </div>
         <div>
-            <p>What was the name of the arcade machine that Josh made his wish on?</p>
+        <hr>
+            <p><strong>2. ) What was the name of the arcade machine that Josh made his wish on?</strong></p>
+            <hr>
             <iframe src="https://giphy.com/embed/CToJzvhONI6A0" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
             <p><a href="https://giphy.com/gifs/zoltar-CToJzvhONI6A0">via GIPHY</a></p>
             <input type="radio" id="radio5" name="question2" value="Cleo">
@@ -55,11 +69,13 @@
             </br>
         </div>
         <div>
-            <p>At what company does Josh get a job with in New York City?</p>
+        <hr>
+            <p><strong>3. ) At what company does Josh get a job with in New York City?</strong></p>
+            <hr>
             <iframe src="https://giphy.com/embed/3x25aIHgP2jsc" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
             <p><a href="https://giphy.com/gifs/tom-hanks-3x25aIHgP2jsc">via GIPHY</a></p>
             <input type="radio" id="radio9" name="question3" value="F.A.O. Schwarz">
-            <label id="r9">F.A.O. Schwarz</label>
+            <label id="r9">F. A. O. Schwarz</label>
             </br>
             <input type="radio" id="radio10" name="question3" value="MacMillan Toy Company">
             <label id="r10">MacMillan Toy Company</label>
@@ -72,7 +88,9 @@
             </br>
         </div>
         <div>
-            <p>Which of these songs does Josh and Mr. MacMillan play on the Walking Piano at F.A.O. Schwarz?</p>
+        <hr>
+            <p><strong>4. ) Which of these songs does Josh and Mr. MacMillan play on the Walking Piano at F.A.O. Schwarz?</strong></p>
+            <hr>
             <iframe src="https://giphy.com/embed/4iIbR5EhlWHPq" width="480" height="285" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
             <p><a href="https://giphy.com/gifs/film-big-80s-movies-4iIbR5EhlWHPq">via GIPHY</a></p>
             <input type="radio" id="radio13" name="question4" value="Chopsticks">
@@ -89,7 +107,9 @@
             </br>
         </div>
         <div>
-            <p>After leaving the work party, what does Josh and his co-worker Susan do at his place?</p>
+        <hr>
+            <p><strong>5. ) After leaving the work party, what does Josh and his co-worker Susan do at his place?</strong></p>
+            <hr>
             <iframe src="https://giphy.com/embed/10w8BEthGsGS0U" width="480" height="392" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
             <p><a href="https://giphy.com/gifs/big-tom-hanks-academy-award-10w8BEthGsGS0U">via GIPHY</a></p>
             <input type="radio" id="radio17" name="question5" value="Jump on a trampoline">
@@ -106,7 +126,9 @@
             </br>
         </div>
         <div>
-            <p>What toy do Susan and Josh collaborate on for MacMillan Toys?</p>
+        <hr>
+            <p><strong>6. ) What toy do Susan and Josh collaborate on for MacMillan Toys?</strong></p>
+            <hr>
             <iframe src="https://giphy.com/embed/YxunEszWCsOpG" width="480" height="192" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
             <p><a href="https://giphy.com/gifs/big-tom-hanks-elizabeth-perkins-YxunEszWCsOpG">via GIPHY</a></p>
             <input type="radio" id="radio21" name="question6" value="A transformer for girls">
@@ -123,7 +145,9 @@
             </br>
         </div>
         <div>
-            <p>How did Josh become a kid again?</p>
+        <hr>
+            <p><strong>7. ) How did Josh become a kid again?</strong></p>
+            <hr>
             <iframe src="https://giphy.com/embed/9VObaC8bs7PW0" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
             <p><a href="https://giphy.com/gifs/zoltar-your-wish-is-granted-9VObaC8bs7PW0">via GIPHY</a></p>
             <input type="radio" id="radio25" name="question7" value="The effects wore off when he went to sleep">
@@ -140,7 +164,9 @@
                 </br>
         </div>
         <div>
-            <p>Who took Josh home once he made his wish to be little again?</p>
+        <hr>
+            <p><strong>8. ) Who took Josh home once he made his wish to be little again?</strong></p>
+            <hr>
             <iframe src="https://giphy.com/embed/7FgcOayLFeMuY" width="480" height="257" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
             <p><a href="https://giphy.com/gifs/big-tom-hanks-jared-rushton-7FgcOayLFeMuY">via GIPHY</a></p>
             <input type="radio" id="radio29" name="question8" value="His girlfriend, Susan Lawrence">
@@ -156,20 +182,25 @@
                 <label id="r32">His boss, Mr. MacMillan</label>
                 </br>
                 </br>
-        </div>
+                <hr>
+        
     
     <input id="button" type="button" value="I'm finished!" 
     onclick="check();">
     <div id="after_submit">
-
-    </div>
-    </div>
-</form>
-
-    <div id="score-board">
+    </br>
+     <div id="score-board">
             <p id="correct"></p>
             <p id="incorrect"></p>
         </div>
+</div>
+        </div>
+    </div>
+    </div>
+    </br>
+   
+</form>
+
 
 </body>
 

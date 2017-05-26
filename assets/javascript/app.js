@@ -92,6 +92,6 @@ function check() {
 
 
     document.getElementById("after_submit").style.visibility = "visible";
-    document.getElementById("correct").innerHTML = "Great job! You got  " + correct + " answers correct!";
-    document.getElementById("incorrect").innerHTML = "Uh oh! You got " + incorrect + " incorrect.";
+    document.getElementById("correct").innerHTML = "Great job! You got  " + correct + " questions correct!";
+    document.getElementById("incorrect").innerHTML = "Uh oh! You got " + incorrect + " questions incorrect.";
 }

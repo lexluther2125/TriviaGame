@@ -1,10 +1,41 @@
 body {
-	text-indent: 10px;
-}
-
+	align-items: center;
+	background-color: black;
+	font-family: 'Archivo Black', sans-serif;
 
 	
+}
 
+#timer {
+	font-size: 25px;
+}
+
+#zoltar {
+	height: 350px;
+	width: 500px;
+	margin-left: 10px;
+}	
+
+#header {
+	margin-right: 150px;
+	color: white;
+	text-indent: 10px;
+	font-family: 'Ultra', serif;
+	font-size: 60px;
+	text-shadow: 5px;
+	background-color: grey;
+	padding: 30px;
+	padding-top: 20px;
+	margin-top:  0;
+	
+}
+
+#trivia {
+	margin-left: 10px;
+}
+.intro {
+	align-items: right;
+	width: 500px;
 }
 
 #start {
@@ -16,8 +47,24 @@ body {
 	font-size: 16px;
 }
 
+#game-board {
+	margin-left: 10px;
+}
+
 
 #timer {
 	color:red;
 }
 
+p {
+	font-size: 16px;
+	text-indent: 10px;
+}
+
+#button {
+	 /*float: right;*/
+}
+
+#scoreboard {
+	float: right;
+}
