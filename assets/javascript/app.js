@@ -1,14 +1,19 @@
+
+
+
 var count = 90;
 
 var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
 
 function timer() {
     count = count - 1;
+    $("#timer").html(count);
     if (count <= 0) {
         clearInterval(counter);
         //counter ended, do something here
-        $("game-board").hide();
         alert("Time's Up!");
+        $("quiz").hide();
+        check();
     }
 
     //Do code for showing the number of seconds here

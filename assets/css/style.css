@@ -1,11 +1,9 @@
 body {
-	
+	text-indent: 10px;
 }
 
-#header {
-	text-align: center;
-	color: white;
-	font-family: 'Diplomata', cursive;
+
+	
 
 }
 
@@ -18,22 +16,8 @@ body {
 	font-size: 16px;
 }
 
-#question {
-	text-indent: 10px;
-	color: red;
-	text-align: center;
-}
 
 #timer {
 	color:red;
 }
 
-#pic {
-	margin-left: 80px;
-	width: 500px;
-	height: 300px;
-}
-
-#answers {
-	margin-left: 512px;
-}
