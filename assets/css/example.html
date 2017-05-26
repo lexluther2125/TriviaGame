@@ -12,16 +12,19 @@
 
 <body>
     <h1>A 'Big' Trivia Game</h1>
-    <div class="intro"  id="game-board" class="invisible">
+    <div class="intro">
         <p>How well do you remember the movie, 'Big' starring Tom Hanks? Try your hand at these eight trivia questions and see how well you do. Be mindful of the timer though! You only have a limited amount of time to complete these questions. Good luck!</p>
-        
-    </div>
+        <div id="score-board">
+            <p id="number_correct"></p>
+            <p id="correctAnswers"></p>
+            <p id="incorrectAnswers"></p>
+        </div>
+    </div id="game-board" class="invisible">
     <button id=“start”>Start Game</button>
     </br>
-    
-    <p>You have <span id="timer"></span> seconds remaining!</p>
-  
-</div>
+    <div id="wrapper">
+        <div>You have <span id="myTimer"></span> seconds remaining!</div>
+    </div>
     <form id= "quiz" name= "quiz">
         <p>In the movie 'Big', what did Josh Baskin wish for?</p>
         <iframe src="https://giphy.com/embed/DRt7Urn4gtfos" width="480" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
@@ -133,7 +136,7 @@
             <label id="r25">The effects wore off when he went to sleep</label>
             </br>
             <input type="radio" id="radio26" name="question7" value="He visited a fortune teller who made him a potion to return him back to normal">
-            <label id="r26">He visited a fortune teller who made him a potion to return him back to normal</label>
+            <label id="r26">He visited a fortune teller who made him a potion to return him back to normal
                 </br>
                 <input type="radio" id="radio27" name="question7" value="He woke up from a dream and realized that it was all just a dream">
                 <label id="r27">He woke up from a dream and realized that it was all just a dream</label>
@@ -150,7 +153,7 @@
             <label id="r29">His girlfriend, Susan Lawrence</label>
             </br>
             <input type="radio" id="radio30" name="question8" value="His best friend, Billy Kopecki">
-            <label id="r30">His best friend, Billy Kopecki</label>
+            <label id="r30">His best friend, Billy Kopecki
                 </br>
                 <input type="radio" id="radio31" name="question8" value="His dream girl, Cynthia Benson">
                 <label id="r31">His dream girl, Cynthia Benson</label>
@@ -159,21 +162,20 @@
                 <label id="r32">His boss, Mr. MacMillan</label>
                 </br>
                 </br>
+                <input id="button" type="button" value="I'm finished!" onclick="check();">
         </div>
-    
-    <input id="button" type="button" value="I'm finished!" 
-    onclick="check();">
+    </form>
     <div id="after_submit">
-
+        <p id="number_correct"></p>
     </div>
     </div>
-</form>
+    <script>
+ 
+    // $(“#start”).click(function() {
 
-    <div id="score-board">
-            <p id="number_correct"></p>
-            <p id="number_incorrect"></p>
-        </div>
+                // $(“#start”).addClass(“invisible”)
 
+    </script>
 </body>
 
 </html>
